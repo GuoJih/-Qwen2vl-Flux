@@ -155,7 +155,7 @@ def apply_multimodal_rotary_pos_emb(q, k, cos, sin, position_ids, mrope_section,
     Explanation:
         Multimodal 3D rotary position embedding is an extension to 1D rotary position embedding. The input embedding
         sequence contains vision (images / videos) embedding and text embedding or just contains text embedding. For
-        vision embedding part, we apply rotary position embedding on temporal, height and width dimension seperately.
+        vision embedding part, we apply rotary position embedding on temporal, height and width dimension separately.
         Here we split the channel dimension to 3 chunks for the temporal, height and width rotary position embedding.
         For text embedding part, we just apply 1D rotary position embedding. The three rotary position index (temporal,
         height and width) of text embedding is always the same, so the text embedding rotary position embedding has no
